@@ -91,9 +91,25 @@ html{
     z-index: 1;
 }
 
-#header .search-btn{
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .search-btn, #header .mobile-menu-btn{
     float: right;
     padding: 0 21px;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    background-color: #ccc;
+    color: #000;
 }
 
 #header .search-btn:hover{
@@ -101,7 +117,7 @@ html{
     cursor: pointer;
 }
 
-#header .search-icon{
+#header .search-icon, #header .menu-icon{
     color: #fff;
     font-size: 20px;
     line-height: 46px;
@@ -203,9 +219,12 @@ html{
 
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     margin-left: auto ;
     margin-right: auto ;
     padding: 64px 0px 112px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading{
@@ -442,8 +461,6 @@ header.modal-header i{
 
 }
 
-
-
 #footer{
     padding: 64px 16px;
     text-align: center;
@@ -467,12 +484,9 @@ header.modal-header i{
     color: rgba(0, 0, 0, 0.6);
 }
 
-
 .map-section img{
     width: 100%;
 }
-
-
 
 @keyframes modalFadeIn {
     from {
