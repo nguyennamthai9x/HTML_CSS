@@ -7,6 +7,10 @@
 }
 
 @media (max-width: 740px){
+    .s-full-width, .s-col-full{
+        width: 100% !important;
+    }
+    
     #header{
         overflow: hidden;
     }
@@ -43,6 +47,18 @@
     #nav .subnav a{
         color: aliceblue;
         padding: 5px 45px;
+    }
+
+    #content .member-img{
+        width: 60%;
+    }
+
+    .contact-form{
+        margin-top: 16px;
+    }
+
+    .s-mt-8{
+        margin-top: 8px !important;
     }
     
 }
