@@ -209,7 +209,6 @@ html{
 #slider .text-heading{
     font-weight: 300;
     font-size: 24px;
-    
 }
 
 #slider .text-description{
@@ -447,6 +446,15 @@ header.modal-header i{
 .contact-info{
     font-size: 18px;
     line-height: 1.5;
+}
+
+.contact-info a{
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover{
+    opacity: 1;
 }
 
 .contact-info i[class*="ti-"]{
