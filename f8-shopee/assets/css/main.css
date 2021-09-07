@@ -264,6 +264,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 12px;
+    margin-top: 10px;
 }
 
 .auth-from_heading{
@@ -358,6 +360,30 @@
 .auth-from__socials-title{
     margin: 0 36px;
 }
+
+.auth-from__help{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.auth-from__help-link{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #939393;
+}
+
+.auth-from__help-forgot{
+    color: var(--primary-color);
+}
+
+.auth-from__help-separate{
+    display: block;
+    border-left: 1px solid #eaeaea;
+    height: 22px;
+    margin: 0 16px;
+}
+
 
 
 /* Animation */
