@@ -671,6 +671,7 @@
     display: inline-block;
     padding: 0 12px;
     cursor: pointer;
+    z-index: 1;
 }
 
 .header__cart-icon{
@@ -992,23 +993,7 @@
 
 /* Product item */
 .home-product-item{
-
-}
-
-.home-product-item__img{
-
-}
-
-.home-product-item__name{
-
-}
-
-.home-product-item__price{
-
-}
-
-
-.home-product-item{
+    position: relative;
     margin-top: 10px;
     background-color: var(--white-color);
 }
@@ -1111,16 +1096,76 @@ i.home-product-item__like-icon-fill{
     
 }
 .home-product-item__favourite{
-
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    color: var(--primary-color);
+    background-color: currentColor;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-right: 4px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
+
+.home-product-item__favourite::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    border-top: 3px solid currentColor;
+    border-left: 3px solid transparent;
+    filter: brightness(60%);
+}
+
+.home-product-item__favourite span{
+    color: var(--white-color);
+}
+
+.home-product-item__favourite i{
+    color: var(--white-color);
+    font-size: 0.9rem;
+    margin: 0 2px 0 5px;
+    /* Lam hinh tam giac nut yeu thich */
+}
+
 .home-product-item__sale-off{
-
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 36px;
+    background-color: rgba(255, 216, 64, 1);
+    text-align: center;
 }
+
+.home-product-item__sale-off::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    color: rgba(255, 216, 64, 1);
+    border-width: 0 20px 4px;
+    border-style: solid;
+    border-color: transparent currentColor transparent currentColor;
+}
+
 .home-product-item__sale-off-percent{
-
+    color: #ee4e2d;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+    position: relative;
+    top: 4px;
 }
-.home-product-item__sale-off-label{
 
+.home-product-item__sale-off-label{
+    color: var(--white-color);
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+    position: relative;
+    top: 4px;
 }
 
 /* Animation */
