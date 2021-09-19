@@ -535,11 +535,12 @@
     height: var(--header-with-search-height);
     display: flex;
     align-items: center;
-    margin: 8px 8px;
+    margin: 0px 8px;
 }
 
 .header__mobile-search{
     padding: 0 12px;
+    display: none;
 }
 
 .header__mobile-search-icon{
@@ -1007,6 +1008,7 @@
 /* Mobile category */
 /*  */
 .mobile-category{
+    display: none;
 
 }
 .mobile-category__list{
@@ -1054,8 +1056,9 @@
     overflow: hidden;
     user-select: none;
     -webkit-user-select: none;
-    /*  */
+    /* bỏ high line phần tử */
     -webkit-tap-highlight-color: transparent;
+    padding: 0 6px;
 }
 
 /* Home sort, filter */
@@ -1361,7 +1364,7 @@ i.home-product-item__like-icon-fill{
 
 .footer-item__icon{
     font-size: 1.6rem;
-    margin: -1px 6px 0 8px;
+    margin: -1px 6px 0 0px;
 }
 
 .footer__download{
