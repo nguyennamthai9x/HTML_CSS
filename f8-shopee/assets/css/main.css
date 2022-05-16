@@ -62,7 +62,7 @@
     border-radius: 2px;
     width: 160px;
     list-style: none;
-    z-index: 2;
+    z-index: 3;
     box-shadow: 0 1px 5px #c2c0c0;
     display: none;
 }
