@@ -232,7 +232,7 @@
 /* Header notification */
 .header__notify{
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     margin-top: 6px;
     top: 100%;
     right: 0;
